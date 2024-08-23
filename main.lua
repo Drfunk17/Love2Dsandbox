@@ -12,4 +12,12 @@ function love.errorhandler(msg)
     end
 end
 
-print("Hello World")
+function love.load()
+
+end
+
+function love.update()
+
+end
+
+function love.draw()
