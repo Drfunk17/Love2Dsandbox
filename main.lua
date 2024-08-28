@@ -12,4 +12,27 @@ function love.errorhandler(msg)
     end
 end
 
-print("Hello World")
+local Map = require("map")
+local Player = require("player")
+local Ghost = require("ghost")
+local Point = require("point")
+
+function love.load()
+    Map:load()
+    Player:load()
+    Ghost:load()
+    Point:load()
+end
+
+function love.update(dt)
+    Player:update(dt)
+    Ghost:update(dt)
+    Point:update(dt)
+end
+
+function love.draw()
+    Map:draw()
+    Player:draw()
+    Ghost:draw()
+    Point:draw()
+end
