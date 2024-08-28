@@ -11,5 +11,3 @@ function love.errorhandler(msg)
         return love_errorhandler(msg)
     end
 end
-
-print("Hello World")
